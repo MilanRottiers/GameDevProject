@@ -1,60 +1,54 @@
-﻿using Microsoft.Xna.Framework;
+﻿using GameDevProject;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using System;
+using Microsoft.Xna.Framework;
 using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Threading.Tasks;
+using System;
 
-namespace GameDevProject
+internal class PlayerShoot
 {
-    internal class PlayerShoot
+    private Texture2D bulletSprite;
+    private Vector2 playerPosition;
+    private List<Bullet> bullets = new List<Bullet>();
+
+    private float timeSinceLastShot = 0f;  // Tijd sinds het laatste schot
+    private float shootCooldown = 0.1f;    // Cooldown-tijd tussen schoten in seconden (0.1 seconde)
+
+    public PlayerShoot(Texture2D bulletSprite, Vector2 pos)
     {
-        Texture2D bulletSprite;
-        Vector2 pos;
+        this.bulletSprite = bulletSprite;
+        this.playerPosition = pos;
+    }
 
-        private List<Bullet> bullets = new List<Bullet>();
+    public void Update(Vector2 playerPosition, GameTime gameTime)
+    {
+        this.playerPosition = playerPosition;
 
-        float counter = 0;
+        timeSinceLastShot += (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-        public PlayerShoot(Texture2D bulletSprite, Vector2 pos)
+        if (Mouse.GetState().LeftButton == ButtonState.Pressed)
         {
-            this.bulletSprite = bulletSprite;
-            this.pos = pos;
-        }
-
-        public void Update()
-        {
-            counter++;
-            if (counter > 29)
+            
+            if (timeSinceLastShot >= shootCooldown)
             {
-                counter = 0;
-            }
-
-            if (Mouse.GetState().LeftButton == ButtonState.Pressed)
-            {
-                Vector2 direction = Mouse.GetState().Position.ToVector2() - pos;
-                bullets.Add(new Bullet(bulletSprite, this.pos, direction));
-            }
-
-
-            // Update bullets
-            foreach (var bullet in bullets)
-            {
-                bullet.Update();
+                timeSinceLastShot = 0f; // Reset de timer
+                Vector2 direction = Mouse.GetState().Position.ToVector2() - this.playerPosition;
+                bullets.Add(new Bullet(bulletSprite, this.playerPosition, direction));
             }
         }
 
-        public void Draw(SpriteBatch spriteBatch)
+        // Update de kogels
+        foreach (var bullet in bullets)
         {
-            foreach (var bullet in bullets)
-            {
-                bullet.Draw(spriteBatch);
-            }
+            bullet.Update();
         }
+    }
 
+    public void Draw(SpriteBatch spriteBatch)
+    {
+        foreach (var bullet in bullets)
+        {
+            bullet.Draw(spriteBatch);
+        }
     }
 }

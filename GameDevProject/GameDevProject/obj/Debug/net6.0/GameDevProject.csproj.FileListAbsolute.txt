@@ -25,3 +25,4 @@ C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProj
 C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\obj\Debug\net6.0\GameDevProject.genruntimeconfig.cache
 C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\obj\Debug\net6.0\ref\GameDevProject.dll
 C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\bin\Debug\net6.0\Content\98948-200.xnb
+C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\obj\Debug\net6.0\GameDevProject.sourcelink.json

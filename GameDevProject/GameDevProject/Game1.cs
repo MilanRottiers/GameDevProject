@@ -54,7 +54,7 @@ namespace GameDevProject
                 Exit();
 
             player.Update();
-            playerShoot.Update();
+            playerShoot.Update(player.pos, gameTime);  // Pass gameTime to PlayerShoot.Update
 
             counter++;
             if (counter > 29)
@@ -70,6 +70,7 @@ namespace GameDevProject
 
             base.Update(gameTime);
         }
+
 
         protected override void Draw(GameTime gameTime)
         {

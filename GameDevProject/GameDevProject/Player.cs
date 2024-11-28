@@ -33,7 +33,6 @@ internal class Player
 
     public void Update()
     {
-        playerShoot.Update();
 
         MouseState mouse = Mouse.GetState();
 
