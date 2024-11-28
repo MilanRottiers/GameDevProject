@@ -24,7 +24,13 @@ namespace GameDevProject
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
+
+            _graphics.IsFullScreen = true;
+
+            _graphics.PreferredBackBufferWidth = 1920;   
+            _graphics.PreferredBackBufferHeight = 1080;   
         }
+
 
         protected override void Initialize()
         {
