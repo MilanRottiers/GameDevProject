@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|solutionrelative:gamedevproject\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|solutionrelative:gamedevproject\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|solutionrelative:gamedevproject\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|solutionrelative:gamedevproject\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +19,12 @@
       "RelativeMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|solutionrelative:gamedevproject\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|solutionrelative:gamedevproject\\enemyspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|solutionrelative:gamedevproject\\playershoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|solutionrelative:gamedevproject\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66D13D82-2387-47EC-B7F6-1D00EE7863D3}|GameDevProject\\GameDevProject.csproj|c:\\users\\milan\\desktop\\mapke\\skool\\2e\\gamedev\\project\\gamedevproject\\gamedevproject\\gamedevproject\\content\\pngkey.com-spaceship-png-280173.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,26 +82,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Enemy.cs",
               "DocumentMoniker": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\Enemy.cs",
               "RelativeDocumentMoniker": "GameDevProject\\Enemy.cs",
               "ToolTip": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\Enemy.cs",
               "RelativeToolTip": "GameDevProject\\Enemy.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T15:54:50.921Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "EnemySpawner.cs",
               "DocumentMoniker": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\EnemySpawner.cs",
               "RelativeDocumentMoniker": "GameDevProject\\EnemySpawner.cs",
               "ToolTip": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\EnemySpawner.cs",
               "RelativeToolTip": "GameDevProject\\EnemySpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-12T15:54:08.872Z",
               "EditorCaption": ""
@@ -120,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PlayerShoot.cs",
               "DocumentMoniker": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\PlayerShoot.cs",
               "RelativeDocumentMoniker": "GameDevProject\\PlayerShoot.cs",
@@ -128,18 +128,17 @@
               "RelativeToolTip": "GameDevProject\\PlayerShoot.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowDIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T10:22:50.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T10:22:50.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\Game1.cs",
               "RelativeDocumentMoniker": "GameDevProject\\Game1.cs",
               "ToolTip": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\Game1.cs",
               "RelativeToolTip": "GameDevProject\\Game1.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAYwHYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowDcAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T14:26:54.432Z",
               "EditorCaption": ""
@@ -158,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Bullet.cs",
               "DocumentMoniker": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\Bullet.cs",
               "RelativeDocumentMoniker": "GameDevProject\\Bullet.cs",
@@ -166,18 +165,17 @@
               "RelativeToolTip": "GameDevProject\\Bullet.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAgwBsAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T10:52:04.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-28T10:52:04.48Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\Player.cs",
               "RelativeDocumentMoniker": "GameDevProject\\Player.cs",
               "ToolTip": "C:\\Users\\Milan\\Desktop\\mapke\\skool\\2e\\GameDev\\Project\\GameDevProject\\GameDevProject\\GameDevProject\\Player.cs",
               "RelativeToolTip": "GameDevProject\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T12:49:02.638Z",
               "EditorCaption": ""

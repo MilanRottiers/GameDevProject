@@ -6,6 +6,7 @@ using System;
 
 internal class Player
 {
+    public bool IsAlive = true;
     public Vector2 pos;
     public float rotation;
 

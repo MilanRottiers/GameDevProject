@@ -10,10 +10,10 @@ namespace GameDevProject
     {
         Vector2 position;
 
-        public Enemy()
+        public Enemy(Vector2 position)
         {
             Random rng = new Random();
-            position = new Vector2(100, 100);
+            this.position = position;
         }
 
         public void Draw(Texture2D enemySprite, SpriteBatch spriteBatch)

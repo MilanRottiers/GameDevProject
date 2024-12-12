@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,17 +10,37 @@ namespace GameDevProject
     internal class EnemySpawner
     {
         Game1 game;
+        Player player;
 
-        public EnemySpawner(Game1 game)
+        float timeToWait = 100;
+        float timeSinceLastSpawn;
+
+        Random rng = new Random();
+
+        public EnemySpawner(Game1 game, Player player)
         {
             this.game = game;
-
-            SpawnEnemy();
+            
+            this.player = player;
         }
+
+        public void Update(GameTime gameTime)
+        {
+            if (player.IsAlive)
+            {
+                if(timeSinceLastSpawn > timeToWait)
+                {
+                    timeSinceLastSpawn = 0;
+                    SpawnEnemy();
+                }
+                    timeSinceLastSpawn++;
+            }
+        }
+
 
         public void SpawnEnemy()
         {
-            game.enemies.Add(new Enemy());
+            game.enemies.Add(new Enemy(new Vector2(rng.Next(0, 1920), rng.Next(0, 1080))));
         }
     }
 }

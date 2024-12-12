@@ -50,10 +50,10 @@ namespace GameDevProject
             playerSpriteSheet = Content.Load<Texture2D>("PngItem_6602144");
             bulletSprite = Content.Load<Texture2D>("98948-200");
             enemySprite = Content.Load<Texture2D>("pngkey.com-spaceship-png-280173");
-            enemySpawner = new EnemySpawner(this);
 
             // Maak de speler aan nadat de sprite is geladen
             player = new Player(playerSpriteSheet, new Vector2(100, 100), bulletSprite);
+            enemySpawner = new EnemySpawner(this, player);
             playerShoot = new PlayerShoot(bulletSprite, player.pos);
 
             activeFrame = 0;
@@ -67,6 +67,7 @@ namespace GameDevProject
                 Exit();
 
             player.Update();
+            enemySpawner.Update(gameTime);
             playerShoot.Update(player.pos, gameTime);
 
 
