@@ -1,4 +1,6 @@
-﻿using Microsoft.Xna.Framework;
+﻿using GameDevProject.enemies;
+using GameDevProject.scenes;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
@@ -8,21 +10,27 @@ namespace GameDevProject
     public class Game1 : Game
     {
         private GraphicsDeviceManager _graphics;
-        private SpriteBatch _spriteBatch;
+        public SpriteBatch _spriteBatch;
+
+        public float CurrentScene = 0; //0 = menu, 1-3 = levels, 4 = death screen, 5 = win screen
+        Menu menu;
+        Scene1 scene1;
+        List<Scene> scenes = new List<Scene>();
+
 
         Player player;
-        PlayerShoot playerShoot;
-        EnemySpawner enemySpawner;
 
         Texture2D playerSpriteSheet;
         int counter;
-        int activeFrame;
+        public int activeFrame;
         int numFrames;
 
         public List<Enemy> enemies = new List<Enemy>();
 
         Texture2D bulletSprite;
         Texture2D enemySprite;
+         
+        KeyboardState keyboardState = Keyboard.GetState();
 
         public Game1()
         {
@@ -32,8 +40,8 @@ namespace GameDevProject
 
             _graphics.IsFullScreen = true;
 
-            _graphics.PreferredBackBufferWidth = 1920;   
-            _graphics.PreferredBackBufferHeight = 1080;   
+            _graphics.PreferredBackBufferWidth = 1920;
+            _graphics.PreferredBackBufferHeight = 1080;
         }
 
 
@@ -44,32 +52,41 @@ namespace GameDevProject
 
         protected override void LoadContent()
         {
+            bulletSprite = Content.Load<Texture2D>("bullet");
+
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // Laad de sprite sheet eerst
-            playerSpriteSheet = Content.Load<Texture2D>("PngItem_6602144");
-            bulletSprite = Content.Load<Texture2D>("98948-200");
-            enemySprite = Content.Load<Texture2D>("pngkey.com-spaceship-png-280173");
-
-            // Maak de speler aan nadat de sprite is geladen
-            player = new Player(playerSpriteSheet, new Vector2(100, 100), bulletSprite);
-            enemySpawner = new EnemySpawner(this, player);
-            playerShoot = new PlayerShoot(bulletSprite, player.pos);
+            // Initialiseer objecten
+            player = new Player(playerSpriteSheet, new Vector2(100, 100), bulletSprite, this);
 
             activeFrame = 0;
             numFrames = 3;
             counter = 0;
+
+            //create scenes
+            menu = new Menu(this, _spriteBatch);
+            scene1 = new Scene1(this, player);
+
+            //add scenes
+            scenes.Add(menu);
+            scenes.Add(scene1);
         }
 
         protected override void Update(GameTime gameTime)
         {
+            keyboardState = Keyboard.GetState();
+
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            player.Update();
-            enemySpawner.Update(gameTime);
-            playerShoot.Update(player.pos, gameTime);
-
+            if (CurrentScene == 0)
+            {
+                menu.Update(gameTime);
+            }
+            else if (CurrentScene == 1)
+            {
+                scene1.Update(gameTime);
+            }
 
             counter++;
             if (counter > 29)
@@ -83,6 +100,11 @@ namespace GameDevProject
                 }
             }
 
+            if (keyboardState.IsKeyDown(Keys.C) && CurrentScene == 0)
+            {
+                CurrentScene += 1;
+            }
+
             base.Update(gameTime);
         }
 
@@ -91,34 +113,14 @@ namespace GameDevProject
         {
             GraphicsDevice.Clear(Color.White);
 
-            _spriteBatch.Begin();
-
-            playerShoot.Draw(_spriteBatch);
-
-            int frameWidth = 150;
-            int frameHeight = 381;
-            int frameX = (activeFrame + 1) * frameWidth;
-
-            Vector2 origin = new Vector2(frameWidth / 2f, frameHeight / 2f);
-
-            _spriteBatch.Draw(
-                playerSpriteSheet,
-                player.pos,
-                new Rectangle(frameX, 0, frameWidth, frameHeight),
-                Color.White,
-                player.rotation,
-                origin,
-                .25f,
-                SpriteEffects.None,
-                0f
-            );
-
-            foreach(Enemy e in enemies)
+            if (CurrentScene == 0)
             {
-                e.Draw(enemySprite, _spriteBatch);
+                menu.Draw(_spriteBatch);
             }
-
-            _spriteBatch.End();
+            else if (CurrentScene == 1)
+            {
+                scene1.Draw(_spriteBatch);
+            }
 
             base.Draw(gameTime);
         }

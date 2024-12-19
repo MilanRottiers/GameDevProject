@@ -5,10 +5,16 @@
   <Config />
   <SourceFiles>
     <File>C:/Users/Milan/Desktop/mapke/skool/2e/GameDev/Project/GameDevProject/GameDevProject/GameDevProject/Content/98948-200.png</File>
+    <File>C:/Users/Milan/Desktop/mapke/skool/2e/GameDev/Project/GameDevProject/GameDevProject/GameDevProject/Content/background.png</File>
+    <File>C:/Users/Milan/Desktop/mapke/skool/2e/GameDev/Project/GameDevProject/GameDevProject/GameDevProject/Content/bullet.png</File>
+    <File>C:/Users/Milan/Desktop/mapke/skool/2e/GameDev/Project/GameDevProject/GameDevProject/GameDevProject/Content/menuBackground.png</File>
     <File>C:/Users/Milan/Desktop/mapke/skool/2e/GameDev/Project/GameDevProject/GameDevProject/GameDevProject/Content/PngItem_6602144.png</File>
     <File>C:/Users/Milan/Desktop/mapke/skool/2e/GameDev/Project/GameDevProject/GameDevProject/GameDevProject/Content/pngkey.com-spaceship-png-280173.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

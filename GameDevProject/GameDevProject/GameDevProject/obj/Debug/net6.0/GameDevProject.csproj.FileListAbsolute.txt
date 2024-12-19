@@ -55,3 +55,6 @@ C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProj
 C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\GameDevProject\obj\Debug\net6.0\GameDevProject.pdb
 C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\GameDevProject\obj\Debug\net6.0\GameDevProject.genruntimeconfig.cache
 C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\GameDevProject\obj\Debug\net6.0\ref\GameDevProject.dll
+C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\GameDevProject\bin\Debug\net6.0\Content\background.xnb
+C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\GameDevProject\bin\Debug\net6.0\Content\bullet.xnb
+C:\Users\Milan\Desktop\mapke\skool\2e\GameDev\Project\GameDevProject\GameDevProject\GameDevProject\bin\Debug\net6.0\Content\menuBackground.xnb
