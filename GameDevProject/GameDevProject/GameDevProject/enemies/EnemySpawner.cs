@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,18 +10,19 @@ namespace GameDevProject.enemies
 {
     internal class EnemySpawner
     {
-        Game1 level1;
+        Game1 game;
         Player player;
 
+        Texture2D enemySprite;
         float timeToWait = 100;
         float timeSinceLastSpawn;
 
         Random rng = new Random();
 
-        public EnemySpawner(Game1 game, Player player)
+        public EnemySpawner(Game1 game, Player player, Texture2D enemysprite)
         {
-            this.level1 = game;
-
+            this.game = game;
+            this.enemySprite = enemysprite;
             this.player = player;
         }
 
@@ -40,7 +42,7 @@ namespace GameDevProject.enemies
 
         public void SpawnEnemy()
         {
-            level1.enemies.Add(new Enemy(new Vector2(rng.Next(0, 1920), rng.Next(0, 1080)), player));
+            game.enemies.Add(new Enemy(new Vector2(rng.Next(0, 1920), rng.Next(0, 1080)), player, enemySprite, game));
         }
     }
 }

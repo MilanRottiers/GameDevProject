@@ -22,7 +22,7 @@ public class Player
     public Player(Texture2D texture, Vector2 pos, Texture2D bulletSprite, Game1 game)
     {
         this.pos = pos;
-        playerShoot = new PlayerShoot(bulletSprite, pos);
+        playerShoot = new PlayerShoot(bulletSprite, pos, game);
         this.game = game;
     }
 

@@ -1,4 +1,5 @@
 ﻿using GameDevProject.enemies;
+using GameDevProject.player;
 using GameDevProject.scenes;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;

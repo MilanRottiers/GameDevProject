@@ -37,7 +37,7 @@ namespace GameDevProject.scenes
             bulletSprite = game.Content.Load<Texture2D>("98948-200");
             enemySprite = game.Content.Load<Texture2D>("pngkey.com-spaceship-png-280173");
 
-            enemySpawner = new EnemySpawner(game, player);
+            enemySpawner = new EnemySpawner(game, player, enemySprite);
         }
 
         public override void Update(GameTime gameTime)
@@ -78,7 +78,7 @@ namespace GameDevProject.scenes
             {
                 foreach (Enemy e in game.enemies)
                 {
-                    e.Draw(enemySprite, _spriteBatch);
+                    e.Draw(_spriteBatch);
                 }
             }
 
